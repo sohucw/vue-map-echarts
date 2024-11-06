@@ -1,5 +1,5 @@
 import * as request from '../utils/request';
-let api = process.env.VUE_APP_JSON;
+let api = '';
 // 获取全国JSON
 export const getChinaJson = (params) => request.get(api + `/map/china.json`, params);
 
