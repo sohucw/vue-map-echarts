@@ -4,6 +4,7 @@ const resolve = dir => {
     return path.join(__dirname, dir)
 }
 const IS_PROD = ["production", "prod"].includes(process.env.NODE_ENV);
+console.log('process.env.NODE_ENV', process.env.VUE_APP_PUBLIC_PATH);
 module.exports = {
     publicPath: IS_PROD ? process.env.VUE_APP_PUBLIC_PATH : "/", // 默认'/'，部署应用包时的基本 URL
     runtimeCompiler: true, // 是否使用包含运行时编译器的 Vue 构建版本
